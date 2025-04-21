@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+
 const pageTitle = "About Me";
 
 const identity = {
@@ -34,22 +36,6 @@ const textTransform = 'uppercase';
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
     <style define:vars={{skillColor, fontWeight, textTransform}}>
-      body {
-        background-color: rgb(236, 236, 236);
-        color: blueviolet;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 1.1rem;
-        padding: 3rem;
-      }
-      h1 {
-        color: rgb(238, 0, 238);
-        font-size: 4rem;
-      }
-      a {
-        text-decoration: none;
-        color: rgb(255, 174, 0);
-        font-weight: bold;
-      }
       .skills {
         color: var(--skillColor);
         font-weight: var(--fontWeight);

@@ -1,0 +1,31 @@
+html {
+    background-color: #f1f5f9;
+    font-family: sans-serif;
+  }
+  
+  body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+    line-height: 1.5;
+    background-color: rgb(236, 236, 236);
+    color: blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    padding: 3rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    color: rgb(238, 0, 238);
+    font-size: 4rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(255, 174, 0);
+    font-weight: bold;
+  }
