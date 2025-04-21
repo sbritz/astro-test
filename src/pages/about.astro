@@ -20,6 +20,10 @@ const skills = [
 const happy = true;
 const finished = false;
 const goal = 3;
+
+const skillColor = 'navy';
+const fontWeight = 'bold';
+const textTransform = 'uppercase';
 ---
 
 <html lang="en">
@@ -29,10 +33,10 @@ const goal = 3;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-    <style>
+    <style define:vars={{skillColor, fontWeight, textTransform}}>
       body {
-        background-color: rgb(56, 56, 56);
-        color: white;
+        background-color: rgb(236, 236, 236);
+        color: blueviolet;
         font-family: 'Courier New', Courier, monospace;
         font-size: 1.1rem;
         padding: 3rem;
@@ -47,8 +51,9 @@ const goal = 3;
         font-weight: bold;
       }
       .skills {
-        color: rgb(0, 203, 0);
-        font-weight: bold;
+        color: var(--skillColor);
+        font-weight: var(--fontWeight);
+        text-transform: var(--textTransform);
       }
     </style>
   </head>
